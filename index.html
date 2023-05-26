@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+          .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  text-align: center;
+  background-color: rgba(59, 255, 255, 0.823);
+
+
+  margin-top: 100px;
+  margin-left: 400px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+img{
+height: 200px;
+width: 200px;
+border-radius: 120px;
+
+}
+        </style>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body id="root">
+
+
+        <script>
+            let divRef = React.createElement('div',
+            { className: 'card' },
+            React.createElement('img', {src:'https://m.media-amazon.com/images/I/81Dzcp-9yEL._SY450_.jpg' ,alt:" "}, ),
+  React.createElement('h1' , {}, 'monkey d luffy'),
+  React.createElement('p' , {}, 'Lorem ipsum dolor sit amet'),
+          
+          
+           React.createElement('p' , {}, '100','posts'),
+  React.createElement('p' ,{}, '50','following'),
+React.createElement('p'  ,{}, '1.0B','followers'),
+React.createElement('button' , {}, 'Follow'),
+ React.createElement('button' , {}, 'message'),
+            
+            
+   
+
+           
+            )
+            ReactDOM.render(divRef,document.getElementById('root'))
+        </script>
+
+
+    </body>
+</html>
